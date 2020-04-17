@@ -1,0 +1,762 @@
+
+<HTML>
+<head>
+<title> TECNOLOGÍA 5G </title>
+</head>
+<BODY>
+
+<BODY BGCOLOR="#2A2F3D">
+<BODY LINK="#006400">
+<BODY VLINK="#FF69B4">
+<BODY ALINK="#D2691E">
+
+
+
+<SCRIPT LANGUAGE="javaScript">
+  //VISUALIZAR UN MENSAJE DE BIENVENIDA
+  alert('¡BIENVENIDO A MI PAGINA WEB, QUE NO C COMO LA HICE!');
+ </SCRIPT>
+
+<script language="javascript">
+   //Pedir confirmación para visitar una página
+   function confirmar()
+   {
+	   return confirm("Esta página contiene contenido para mayores de 18 años. ¿LO CUMPLES?")
+   }
+   </script>
+   
+</head>
+
+<script language="javascript">
+//Recoger un dato por teclado y visualizarlo
+var nom;
+nom=prompt("Escribe tu nombre");
+alert("Mucho gusto "+ nom);
+</script>
+
+
+
+<style type="text/css">
+#estado{
+	display:none;
+	position:absolute;
+	top:10px;
+	right:10px;
+	padding:5px;
+	background-color:Alice azul;
+	color:Sopa de mariscos;
+	font-weight:bold;
+}
+</style>
+<script type="text/javascript">
+function llenarCaja(){
+	var caja = document.getElementById("caja");
+	caja.innerHTML= "Esto es un texto desde JavaScript<button>Presioname</button>";
+}
+function alertar(mensaje){
+	var estado = document.getElementById("estado");
+	estado.style.display = "block";
+	estado.innerHTML = mensaje + "<br />" + estado.innerHTML;
+}
+
+</script>
+</head>
+
+<body>
+
+<a href="javascript:llenarCaja()">Llenar Caja</a>
+
+<div id= "caja"></div>
+<div id="estado"></div>
+<input type="button" onclick="alertar('Muchas gracias por visitar mi página web!!!!')" value="Generar problema" />
+<a href='javascript:alertar("Toma un cheto:))))")'>Generar mensaje</a>
+
+
+<br><br>
+
+
+<body>
+<a href="https://www.nationalgeographic.com.es/ciencia/que-es-5g-y-como-nos-cambiara-vida_14449" onclick="return confirmar()"> 
+<FONT COLOR="#FFFFFF" SIZE="4" FACE= "Bookman Old Style"> 
+&nbsp; &nbsp; Enlace a la página de 5G NationalGeographig </FONT></a>
+
+
+<script language="javascript">
+
+ function mailpage()
+ {
+ mail_str = "mailto:karla.mx2003@gmail.com?subject=Ejemplo: " +
+document.title;
+ mail_str += "&body=Te recomiendo que visites esta página --" + document.title;
+mail_str += ". Enlace: " + location.href;
+   location.href = mail_str;
+ }
+ </script>
+ 
+<p align="right">
+ <a href="javascript:mailpage()"> <FONT COLOR="#FFFFFF" SIZE="4" FACE= "Bookman Old Style"> Mandar correo </FONT></a>
+</p>
+
+
+
+<FONT SIZE="6.5" FACE="Abril Fatface" COLOR="#00F2FF">
+<h2 Align= "center"> TECNOLOGÍA 5G </h2>
+<hr align="center" width="45%" color="MistyRose" NOSHADE SIZE="10">
+</FONT>
+
+
+
+<script>
+//Ejemplo que visualiza un reloj digital.
+function Ver_Hora()
+{
+	var mihora = new Date();
+	var horas = mihora.getHours().toString();
+	var minutos = mihora.getMinutes().toString();
+	if(minutos.length == 1) minutos = "0" + minutos;
+	var segundos = mihora.getSeconds().toString();
+	if (segundos.length == 1) segundos = "0" + segundos;
+	
+	document.forms[0].mireloj.value=horas + " : " + minutos + " : " + segundos;
+}
+
+</script>
+
+<form>
+<p align="center">
+<input type="text" size="10" name="mireloj">
+</p>
+</form>
+<script>
+var r =setInterval ("Ver_Hora()",500);
+</script>
+
+<br><br>
+
+<script type="text/javascript">
+function inicializar(){
+	var link = document.getElementById("linkV28");
+	var caja = document.getElementById("cajaContenido");
+	
+	link.href = "http://www.video2brain.com/es";
+	
+	caja.style.backgroundColor = "yellow";
+	caja.style.height="100px";
+	caja.style.border="1px solid back";
+	
+}
+
+function cambiarLink(){
+	document.getElementById("linkV28").href = "http://www.google.com";
+}
+</script>
+
+</head>
+
+<bodyonload="inicializar()">
+<div id="cajaContenido" style="background-color: BlanqueadoAlmendra;">
+
+<a id="linkV28"  href="http://www.google.com/es">Link a la web</a>
+<input type="button" onclick="cambiarLink()" />
+
+</div>
+
+
+<br><br><br>
+
+<style type="text/css">
+
+form {
+	width: 300px;
+	margin: auto;
+}
+
+label {
+	width: 200px;
+	display: block;
+	margin: 10px;
+	float: left;
+}
+input[type=text],select  {
+	width: 200px;
+	float: left;
+}
+
+button {
+	display:block;
+	clear: both;
+	margin-left: 200px;
+}
+
+ul {
+	list-style:none;
+	margin: 0px;
+}
+
+li  {
+	margin: 0px;
+	padding: 0px;
+	height: 80px;
+}
+
+.enfoco  {
+	background-color: #9F9;
+	border: 1px solid green;
+}
+
+.ayuda  {
+	font-size:xx-small;
+	color:green;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+<ul>
+
+<li>
+<label for="nombre"> Nombre </label>
+<input type="text" id="nombre" name="nombre" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="direccion"> Dirección </label>
+<input type="text" id="direccion" name="direccion" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="edad"> Edad </label>
+<input type="text" id="edad" name="edad" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="email"> E-mail </label>
+<input type="text" id="email" name="email" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+</li>
+
+<li>
+<label for="estadocivil"> Estado Civil</label>
+<select id="estadocivil" name="estadocivil" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)"/>
+      <option>Seleccione</option>
+      <option>Soltero/a</option>
+      <option>Casado/a</option>
+      <option>Viudo/a</option>
+      <option>Disvorciado/a</option>
+</select>
+</li>
+<li>
+<label>
+<input type="checkbox" value="SI" />
+Acepto las condiciones 
+</label>
+</li>
+</ul>
+<button>Registrarme</button>
+
+
+</form>
+
+<br><br><br><br>
+
+
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ¿Sabes qué es la red 5G y qué ventajas nos ofrece? 
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Aunque a un ritmo más lento que lo prometido y después de casi una década de su creación, la red 5G se está convirtiendo en una realidad. <br>
+&nbsp; &nbsp; &nbsp; Con una implementación mayor prevista para este 2020, los operadores cuentan con sistemas 5G fijos desde 2018, mientras que la red 5G móvil <br>
+&nbsp; &nbsp; &nbsp; está ya disponible en varias ciudades de los Estados Unidos en 2019. Pero aún hay más preguntas que respuestas. ¿Sabe la gente qué es la red 5G? <br>
+
+<br>
+
+&nbsp; &nbsp; &nbsp; Desde hace un par de años, además, se están desarrollando y lanzando al mercado los teléfonos inteligentes 5G. Por supuesto, está el debate <br>
+&nbsp; &nbsp; &nbsp; sobre qué operador ofrece el mejor servicio. Seguro que tienes preguntas, y estamos aquí para ayudarte. Aquí, todo lo que necesitas saber <br>
+&nbsp; &nbsp; &nbsp; sobre la red 5G. <br>
+ </FONT> </p>
+
+
+<br>
+<hr align="center" size="5"><br>
+
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> <h2 Align= "center"> Qué es y cómo funciona la red 5G </h2>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<img src="C:\Users\ACER\Pictures\600MHz-Grid-V6-2-2.gif" align="center" HSPACE="405" width="520" height="280"> 
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Antes de explicar cómo funciona, probablemente sea una buena idea explicar qué es 5G. Hay muchos detalles específicos de los que hablaremos <br>
+&nbsp; &nbsp; &nbsp; más adelante en esta publicación, pero aquí hay una introducción rápida. <br>
+
+<br>
+
+&nbsp; &nbsp; &nbsp; 5G es la próxima generación de banda ancha móvil que eventualmente reemplazará –o, al menos, aumentará– tu conexión 4G LTE. <br>
+&nbsp; &nbsp; &nbsp; Con 5G verás velocidades de carga y descarga serán exponencialmente más rápidas. La latencia –o el tiempo que tardan los <br>
+&nbsp; &nbsp; &nbsp; dispositivos en comunicarse entre sí y en las redes inalámbricas– también disminuirá drásticamente. <br>
+
+<br>
+
+&nbsp; &nbsp; &nbsp; Ahora que sabemos qué es 5G, habrá que entender cómo funciona, ya que esto lo hace de manera diferente a la red 4G LTE tradicional. <br> 
+&nbsp; &nbsp; &nbsp; Desde bandas de espectro hasta celdas pequeñas, aquí encontrarás todo lo que necesita saber sobre el funcionamiento interno de la red 5G. <br>
+ </FONT> </p>
+
+
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+<img src="C:\Users\ACER\Pictures\1366_2000.jpg" align="right" HSPACE="30" width="450" height="200"> 
+&nbsp; &nbsp; &nbsp; Los autos que se conducen solos, la realidad virtual, las ciudades inteligentes <br>
+&nbsp; &nbsp; &nbsp; y los robots que trabajen  en red: todos funcionarán con tecnología 5G muy pronto. <br>
+&nbsp; &nbsp; &nbsp; El 5G promete abrir la puerta a nuevos procedimientos quirúrgicos, medios de <br>
+&nbsp; &nbsp; &nbsp; transporte más seguros y comunicación instantánea para los servicios de emergencia <br> 
+&nbsp; &nbsp; &nbsp; y socorro. <br>
+ </FONT> </p>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial">
+&nbsp; &nbsp; &nbsp; Como todas las tecnologías de red inalámbrica que son “de última generación”,con 5G tu <br>
+&nbsp; &nbsp; &nbsp; teléfono tendrá una conexión más rápida: será unas 10 veces más veloz que 4G, según <br>
+&nbsp; &nbsp; &nbsp; anticipan los expertos de la industria. Eso es suficiente para transmitir un video de <br>
+&nbsp; &nbsp; &nbsp; “8K” o descargar una película 3D en 30 segundos. (En 4G, eso tomaría seis minutos). <br>
+&nbsp; &nbsp; &nbsp; La capacidad adicional hará que el servicio sea más confiable, permitiendo que más <br>
+&nbsp; &nbsp; &nbsp; dispositivos se conecten a la red simultáneamente. Pero 5G va mucho más allá de los <br>
+&nbsp; &nbsp; &nbsp; teléfonos inteligentes. Sensores, termostatos, coches, robots y otras nuevas tecnologías <br> 
+&nbsp; &nbsp; &nbsp; se conectarán a 5G algún día. Y las redes actuales de 4G no cuentan con el ancho de <br>
+&nbsp; &nbsp; &nbsp; banda suficiente para la gran cantidad de datos que todos esos dispositivos transmitirán. <br> 
+&nbsp; &nbsp; &nbsp; Existe mucho por conocer. <br>
+ </FONT> </p>
+
+
+<img src="C:\Users\ACER\Pictures\redes5g_0.jpg" HSPACE="60" width="580" height="375">
+
+<hr align="center" size="5"><br>
+
+
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ¿Quién esta construyendo 5G?
+
+
+<p align="right" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> 
+<img src="C:\Users\ACER\Pictures\AP_18303189668590.jpg" align="left" HSPACE="50" width="380" height="230">
+Los cuatro operadores de telefonía celular a nivel nacional &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br> 
+en Estados Unidos –Verizon, AT&T, T-Mobile y Sprint– están &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+desarrollando y probando tecnología de red 5G. Además, los &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+fabricantes de chips, incluidos Qualcomm e Intel, trabajan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+en procesadores y radios que permiten las comunicaciones 5G. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+Y las principales compañías de equipos de red –entre ellas &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+Nokia, Ericsson y Huawei– están construyendo la red troncal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+y el equipo para respaldar 5G. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <br> </FONT> </p>
+
+
+
+<br>
+<hr align="center" size="5"><br>
+
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Usos y beneficio de 5g.
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; Banda ancha mejorada.</li>
+
+<p align="justify" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> <b> <FONT COLOR="#FFFFFF"> &nbsp; &nbsp; &nbsp; La tecnología 5G necesitará viajar en ondas de radio de muy alta frecuencia.<FONT COLOR="#FFFFFF"></b>
+Las frecuencias más elevadas <br>
+&nbsp; &nbsp; &nbsp; tienen velocidades más rápidas y más ancho de banda. Pero, no pueden viajar a través de paredes, <br>
+&nbsp; &nbsp; &nbsp; ventanas o tejados, y se vuelven considerablemente más débiles en distancias largas. Esto implica <br>
+&nbsp; &nbsp; &nbsp; que las compañías inalámbricas necesitarán instalar miles –o quizás millones– de torres en miniatura <br>
+&nbsp; &nbsp; &nbsp; para celular encima de cada poste de luz, al costado de los edificios, dentro de cada hogar y <br>
+&nbsp; &nbsp; &nbsp; potencialmente en cada habitación. <br>
+</FONT><br><br> </p>
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Vehículos autónomos</li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> &nbsp; &nbsp; &nbsp; Se espera que los vehículos autónomos aumenten al mismo ritmo que se 
+implementa 5G en los EE. UU. <br>
+&nbsp; &nbsp; &nbsp; En el futuro, tu vehículo se comunicará con otros autos en la carretera, brindará información a otros <br>
+&nbsp; &nbsp; &nbsp; automóviles sobre las condiciones de la carretera y brindará información de rendimiento a los conductores <br>
+&nbsp; &nbsp; &nbsp; y fabricantes de automóviles. Si un automóvilfrena rápidamente hacia adelante, el tuyo puede aprender <br>
+&nbsp; &nbsp; &nbsp; de inmediato y también frenar para prevenir una colisión. <br>
+</FONT> <br> </p>
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Seguridad publica e infraestructura</li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> &nbsp; &nbsp; &nbsp; 5G permitirá que las ciudades y otros municipios operen de manera más 
+eficiente. Las empresas de servicios <br>
+&nbsp; &nbsp; &nbsp; públicos podrán rastrear fácilmente el uso a distancia, los sensores pueden notificar a los departamentos de <br>
+&nbsp; &nbsp; &nbsp; obras públicas cuando se apaguen los desagües o las luces de la calle. <br>
+</FONT> <br> </p>
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Control remoto del dispositivo</li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> &nbsp; &nbsp; &nbsp; Como 5G tiene una latencia notablemente baja, el control remoto de 
+maquinaria pesada se convertirá <br>
+&nbsp; &nbsp; &nbsp; en una realidad. Si bien el objetivo principal es reducir el riesgo en entornos peligrosos, también <br>
+&nbsp; &nbsp; &nbsp; permitirá a los técnicos con habilidades especializadas controlar la maquinaria desde <br>
+&nbsp; &nbsp; &nbsp; cualquier lugar del mundo. <br>
+</FONT> <br> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Cuidado de la salud </li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> 
+&nbsp; &nbsp; &nbsp; El componente ultra confiable de comunicaciones de baja latencia (URLLC) de 5G cambiará <br>
+&nbsp; &nbsp; &nbsp; fundamentalmente la atención médica. Dado que URLLC reduce la latencia de 5G incluso más <br>
+&nbsp; &nbsp; &nbsp; de lo que verás con la banda ancha móvil mejorada, se abre un mundo de nuevas posibilidades. <br>
+&nbsp; &nbsp; &nbsp; Espera ver mejoras en la telemedicina, la recuperación remota y la terapia física a través <br>
+&nbsp; &nbsp; &nbsp; de la RA, la cirugía de precisión e incluso la cirugía remota en los próximos años. <br>
+</FONT> <br> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; IoT </li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> 
+&nbsp; &nbsp; &nbsp; Uno de los aspectos más emocionantes y cruciales de 5G es su efecto en el Internet de las cosas. <br>
+&nbsp; &nbsp; &nbsp; Si bien actualmente tenemos sensores que pueden comunicarse entre sí, tienden a requerir muchos <br>
+&nbsp; &nbsp; &nbsp; recursos y están agotando rápidamente la capacidad de datos LTE. <br>
+
+&nbsp; &nbsp; &nbsp; Con velocidades de 5G y bajas latencias, el IoT será alimentado por comunicaciones entre sensores <br> 
+&nbsp; &nbsp; &nbsp; y dispositivos inteligentes (aquí está nuevamente el mMTC). En comparación con los dispositivos <br>
+&nbsp; &nbsp; &nbsp; inteligentes actuales en el mercado, los dispositivos mMTC requerirán menos recursos, ya que una <br>
+&nbsp; &nbsp; &nbsp; gran cantidad de estos dispositivos pueden conectarse a una única estación base, lo que los hace mucho más eficientes. <br>
+</FONT> <br> </p>
+
+
+<img src="C:\Users\ACER\Pictures\5G_medicina_tecnologia_medicos_dispositivos.jpg"  HSPACE="50" width="340" height="230">
+<img src="C:\Users\ACER\Pictures\5G-gif.gif" width="340" height="230">
+<img src="C:\Users\ACER\Pictures\tecnología-móvil-1-1024x724.jpg" widt="340" height="230" HSPACE="50">
+
+<hr align="center" size="5"><br>
+
+
+
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> <h2 Align= "center"> ¿Cuándo veremos la red 5G? </h2>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<img src="C:\Users\ACER\Pictures\cq5dam-web-1280-1280-20-768x768.jpg" align="center" HSPACE="405" width="520" height="280"> 
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Entonces, ¿cuándo deberías ver la red 5G en tu vecindario? Esta pregunta es un poco más difícil de responder de lo que quisiéramos. <br>
+&nbsp; &nbsp; &nbsp; Los principales operadores de EE.UU. están trabajando arduamente para crear las redes 5G, pero su despliegue en todo el país, <br>
+&nbsp; &nbsp; &nbsp; sin embargo, tomará varios años. <br>
+
+
+<br>
+
+&nbsp; &nbsp; &nbsp; También vale la pena señalar que cada operador tiene una estrategia de lanzamiento diferente. Esto significa que tu experiencia con <br>
+&nbsp; &nbsp; &nbsp; la red 5G podrá variar mucho, dependiendo de la compañía que elijas. Te mencionamos a continuación algunos detalles. Si buscas smartphones, <br> 
+&nbsp; &nbsp; &nbsp; consulta nuestra guía sobre los teléfonos 5G que vienen en el futuro. <br>
+</FONT> </p>
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; Verizon </li>
+
+<img src="C:\Users\ACER\Pictures\artice-image-mobile-world-congress-2-768x768.jpg" HSPACE="60" width="520" height="280"> 
+
+
+<p align="justify" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> <b> <FONT COLOR="#FFFFFF"> 
+&nbsp; &nbsp; &nbsp; En su búsqueda por ser la primera compañía en proporcionar 5G a sus clientes, Verizon comenzó a <br>
+&nbsp; &nbsp; &nbsp; ofrecer una red 5G fija-estándar en hogares en octubre de 2018. El servicio fijo de 5G de Verizon <br>
+&nbsp; &nbsp; &nbsp; está actualmente disponible en más de 20 ciudades, entre las que se encuentran Atlanta, Boston, <br>
+&nbsp; &nbsp; &nbsp; Chicago, Dallas, Detroit, Houston, Indianapolis, Los Angeles, New York y Washington D.C. <br>
+<br>
+&nbsp; &nbsp; &nbsp; El operador más grande de Estados Unidos avanzó en 2019 en el lanzamiento de la telefonía móvil 5G; de <br>
+&nbsp; &nbsp; &nbsp; hecho, está desplegando 5G en un espectro de frecuencias más altas conocido como mmWave (28-39GHz). Esto <br>
+&nbsp; &nbsp; &nbsp; significa que, si bien el 5G de Verizon ofrecerá velocidades increíblemente altas cuando esté disponible, <br>
+&nbsp; &nbsp; &nbsp; se reducirá a cuestas de su espectro LTE durante los próximos años. <br>
+<br>
+&nbsp; &nbsp; &nbsp; En cuanto al hardware, Verizon ya ha anunciado dos dispositivos móviles 5G. En diciembre de 2018, Samsung <br>
+&nbsp; &nbsp; &nbsp; y Verizon anunciaron que se asociarían para lanzar un teléfono 5G en la primera mitad de 2019, el Galaxy <br>
+&nbsp; &nbsp; &nbsp; S10 5G. El operador también lanzó el Moto Mod 5G para el Moto Z3 en los próximos meses. Y no podemos olvidar <br>
+&nbsp; &nbsp; &nbsp; el punto de acceso Inseego Mi-Fi 5G, que incluye un chip Qualcomm Snapdragon 855. <br>
+</FONT> <br> </p>
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; AT&T </li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> 
+&nbsp; &nbsp; &nbsp; AT&T ganó oficialmente la carrera para ser el primer operador en implementar el verdadero servicio 5G. <br>
+&nbsp; &nbsp; &nbsp; En diciembre de 2018, comenzó a ofrecer 5G en partes de Atlanta, Charlotte, Dallas, Houston, Indianápolis, <br>
+&nbsp; &nbsp; &nbsp; Jacksonville, Louisville, Nueva Orleans, Oklahoma City, Raleigh, San Antonio y Waco. <br>
+<br>
+&nbsp; &nbsp; &nbsp; A principios de 2019, el operador también comenzó a desplegar su red en partes de Orlando, Las Vegas, <br>
+&nbsp; &nbsp; &nbsp; Nashville, Los Ángeles, Austin, Dallas y más. <br>
+<br>
+&nbsp; &nbsp; &nbsp; AT&T inicialmente está limitando su servicio 5G a un grupo selecto de empresas y consumidores. Planea <br>
+&nbsp; &nbsp; &nbsp; proporcionar servicios y equipos gratuitos a este grupo durante al menos tres meses, antes de extender <br>
+&nbsp; &nbsp; &nbsp; el servicio a un público más amplio. El servicio estará disponible para el público en general a principios <br>
+&nbsp; &nbsp; &nbsp; de 2019, e inicialmente estará disponible como servicio de punto de acceso, con un costo de $70 al mes por 15 GB de datos. <br>
+<br>
+&nbsp; &nbsp; &nbsp; Al igual que Verizon, AT&T está desplegando su red móvil 5G en el espectro de mmWave. Este diciembre de <br>
+&nbsp; &nbsp; &nbsp; 2018, AT&T dijo que trabajaría con Samsung para lanzar un teléfono 5G en la primavera de 2019. El operador <br>
+&nbsp; &nbsp; &nbsp; también anunció el Punto de Acceso Móvil Netgear Nighthawk 5G a principios de este año. <br>
+<br>
+&nbsp; &nbsp; &nbsp; Con respecto al servicio fijo de 5G, esto va a tomar un poco más de tiempo. La publicación comercial SDX <br>
+&nbsp; &nbsp; &nbsp; Central ha dicho que AT&T implementará el servicio de LTE fijo a finales de 2019 en el espectro del Servicio <br>
+&nbsp; &nbsp; &nbsp; de Radio Ciudadana de Banda Ancha (CBRS, por sus siglas en inglés) y eventualmente migrará al servicio 5G. <br>
+</FONT> <br> </p>
+
+<img src="C:\Users\ACER\Pictures\Red-5G-de-ATT-llega-a-10-ciudades-en-EE.UU_..jpg" HSPACE="60" width="580" height="375">
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; T-Mobile </li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> 
+&nbsp; &nbsp; &nbsp; En lugar de competir para ser la primera compañía, T-Mobile desea brindar un servicio más <br>
+&nbsp; &nbsp; &nbsp; confiable con más área de cobertura. <br>
+<br>
+&nbsp; &nbsp; &nbsp; A principios de 2018, T-Mobile anunció que estaba construyendo su red 5G en 30 ciudades. <br>
+&nbsp; &nbsp; &nbsp; A mediados de 2019, la compañía anunció que el móvil 5G estaba disponible en seis ciudades, <br>
+&nbsp; &nbsp; &nbsp; incluidas partes de Atlanta, Cleveland, Dallas, Las Vegas, Los Ángeles y Nueva York. Y la <br>
+&nbsp; &nbsp; &nbsp; previsión es que la red 5G de T-Mobile llegue a 30 ciudades a finales de 2019. El operador <br>
+&nbsp; &nbsp; &nbsp; planea ofrecer 5G en todo el país para 2020. Asimismo, ofrece el Samsung Galaxy S10 5G para <br>
+&nbsp; &nbsp; &nbsp; aquellos que viven en áreas con 5G y desean aprovechar las nuevas velocidades. <br>
+<br>
+&nbsp; &nbsp; &nbsp; T-Mobile está utilizando una gama de bandas de frecuencia para su despliegue de 5G. <br>
+&nbsp; &nbsp; &nbsp; Aunque inicialmente se pensó que el operador dependería principalmente del espectro de <br>
+&nbsp; &nbsp; &nbsp; banda baja, T-Mobile también está usando tecnología mmWave, que incluye 39GHz en algunas <br>
+&nbsp; &nbsp; &nbsp; ciudades y más 28GHz de banda media en otras áreas.<br>
+</FONT> <br> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Sprint </li>
+
+<p align="left" class="leftmargin"> <FONT COLOR="#FFFFFF" SIZE= "4" FACE = "Arial"> 
+&nbsp; &nbsp; &nbsp; Sprint tampoco corre para ser el primer operador en implementar una red 5G, pero finalmente <br>
+&nbsp; &nbsp; &nbsp; comenzó a implementar su tecnología 5G y su red móvil ya está disponible en Atlanta, Houston, <br>
+&nbsp; &nbsp; &nbsp; Dallas y Kansas City, aunque pronto a estas ciudades les seguirán 0tras como Nueva York, Phoenix, <br>
+&nbsp; &nbsp; &nbsp; Chicago, Los Ángeles y Washington DC. También se añadirán mercados adicionales en un futuro próximo. <br>
+<br>
+&nbsp; &nbsp; &nbsp; Sprint lanzará inicialmente su red 5G en su amplio espectro de banda media (2.5 GHz). Ese es el <br>
+&nbsp; &nbsp; &nbsp; mismo espectro que el operador utiliza para su red de datos 4G, y planea usar equipos MIMO masivos <br>
+&nbsp; &nbsp; &nbsp; de 128 radios en sus torres para crear una división 4G / 5G. <br>
+<br>
+&nbsp; &nbsp; &nbsp; Dado que Sprint es uno de los pocos operadores con mucho espectro adicional de 2.5GHz, puede utilizar <br>
+&nbsp; &nbsp; &nbsp; el exceso de banda media para implementar el servicio 5G de forma rápida y relativamente económica en ciudades más grandes. <br>
+<br>
+&nbsp; &nbsp; &nbsp; En cuanto al hardware, Sprint ha prometido tres productos 5G para 2019. Sprint ofrece a sus clientes el <br>
+&nbsp; &nbsp; &nbsp; LG V50 ThinQ, un 5G Mobile Smart Hub con HTC y el Samsung Galaxy S10 5G.<br>
+</FONT> <br> </p>
+
+
+
+
+<hr align="center" size="5"><br>
+
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <h2 Align= "center"> ¿Quiénes son los principales actores de 5G? </h2>
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Qualcomm </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; El gigante de las telecomunicaciones Qualcomm posee 15 por ciento de todas las patentes 5G y supera por lejos a sus rivales. Desde teléfonos <br>
+&nbsp; &nbsp; &nbsp; hasta celdas pequeñas, Qualcomm participa en casi todas las facetas de 5G. <br>
+<br>
+&nbsp; &nbsp; &nbsp; En los últimos años, Qualcomm anunció varias piezas para impulsar la revolución 5G móvil. En 2016, lanzó el primer módem 5G del mundo, el X50 5G. <br> 
+&nbsp; &nbsp; &nbsp; En 2018, presentó la primera antena integrada RF mmWave para celulares y la segunda para la banda bajo 6GHz. A fines de 2018, reveló Snapdragon <br>
+&nbsp; &nbsp; &nbsp; 855, la primera plataforma móvil comercial del mundo con capacidades de 5G, IA y multi-gigabit de realidad extendida (XR). Qualcomm también <br>
+&nbsp; &nbsp; &nbsp; trabaja en hardware de red. Creó la primera solución 5G NR para celdas pequeñas y cabezales de radio remotos, y se asoció con Samsung para <br>
+&nbsp; &nbsp; &nbsp; crear celdas pequeñas comerciales.<br>
+<br>
+&nbsp; &nbsp; &nbsp; En 2019, en tanto, anunció dos nuevas plataformas móviles para equipar los teléfonos Android: el chip Snapdragon 865, que reemplazará al <br>
+&nbsp; &nbsp; &nbsp; Snapdragon 855, y el sistema Snapdragon X55 Modem-RF, que permitirá alcanzar velocidades máximas de hasta 7.5 Gbps <br>
+ </FONT> </p>
+<img src="C:\Users\ACER\Pictures\_106639741_celu5g.jpg" HSPACE="60" width="650" height="385">
+
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Huawei </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Huawei se perfilaba como el líder en esta carrera, hasta que enfrentó obstáculos en 2018. Estados Unidos bloqueó al gigante chino por <br>
+&nbsp; &nbsp; &nbsp; razones de seguridad y, según algunas versiones, ha presionado a Alemania, Italia, Canadá y Japón para que también lo hagan. <br>
+<br>
+&nbsp; &nbsp; &nbsp; Estados Unidos, India y Australia prohibieron a Huawei proporcionar equipos 5G. Nueva Zelanda dejó de trabajar con la firma, <br>
+&nbsp; &nbsp; &nbsp; pero no están claros los motivos. Alemania estaría planeando una prohibición, aunque no ha sido confirmado. <br>
+<br>
+&nbsp; &nbsp; &nbsp; Huawei tiene 46 contratos comerciales de 5G en todo el mundo. Afirma que su equipo es seguro y que las prohibiciones <br>
+&nbsp; &nbsp; &nbsp; se deben a problemas políticos y no a cuestiones de seguridad. <br>
+</FONT> </p>
+<img src="C:\Users\ACER\Pictures\huawei_5g_d.jpg" HSPACE="60" width="580" height="375">
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Nokia </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; El gigante finlandés Nokia se está asociando con países y operadores de todo el mundo para proporcionar equipos 5G. <br>
+
+&nbsp; &nbsp; &nbsp; En 2018, se asoció con el operador británico O2 para desarrollar dos pruebas MIMO a gran escala en Londres. A principios  <br>
+&nbsp; &nbsp; &nbsp; de 2019, firmó un acuerdo de $3.5 mil millones de dólares para construir la red de T-Mobile en el espectro de 600MHz y 28GHz. <br>
+&nbsp; &nbsp; &nbsp; Además, proporcionará redes 5G para los Juegos Olímpicos de Tokio 2020. <br>
+</FONT> </p>
+<img src="C:\Users\ACER\Pictures\descarga.jpg" HSPACE="60" width="680" height="380">
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Ericsson </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; La empresa sueca Ericsson también quiere entrar al mercado de 5G. Si bien no tiene una participación tan grande en Estados Unidos, <br>
+&nbsp; &nbsp; &nbsp; está trabajando con los principales operadores chinos en pruebas en terreno. <br>
+<br>
+&nbsp; &nbsp; &nbsp; Además, se está asociando con la industria automotriz. En 2018, la compañía firmó una asociación de cinco años con Volvo para <br>
+&nbsp; &nbsp; &nbsp; colaborar en una serie de iniciativas de vehículos conectados a 5G. <br>
+</FONT> </p>
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Samsung </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Cuando hablas de Samsung, inmediatamente piensas en sus teléfonos, pero la compañía también ofrece soluciones de red. <br>
+&nbsp; &nbsp; &nbsp; En 2018, Verizon recurrió a Samsung para proporcionar soluciones fijas de red 5G para su primer lanzamiento comercial. <br>
+&nbsp; &nbsp; &nbsp; También fue elegida por AT&T para suministrar equipos 5G para la red CBRS.<br>
+<br>
+&nbsp; &nbsp; &nbsp; Samsung también trabaja en otros lugares. A fines de 2018, fue seleccionada por South Korea Telecom para suministrarle <br>
+&nbsp; &nbsp; &nbsp; soluciones 5G. Además, el Galaxy S10 5G y el Note Plus 10 5G están disponibles en Verizon y otros operadores.  <br>
+</FONT> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; ZTE </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; La firma china ZTE también quiere convertirse en uno de los grandes de 5G. En 2018, trabajó con el gobierno chino en pruebas <br>
+&nbsp; &nbsp; &nbsp; de núcleo y banda media. Además, firmó un acuerdo con el operador Ooredoo Group, con sede en Qatar, para proporcionar soluciones <br>
+&nbsp; &nbsp; &nbsp; para sus 164 millones de clientes.<br>
+</FONT> </p>
+
+
+<br>
+<hr align="center" size="5"><br>
+
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <h2 Align= "center"> Objetivos 5G y estándares </h2>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; La UIT desarrolló tres escenarios de uso para 5G: <br>
+ </FONT> </p>
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Banda ancha móvil mejorada (eMBB): </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Se ocupa principalmente del uso del consumidor. Con eMBB, habrá acceso a una <br>
+&nbsp; &nbsp; &nbsp; banda ancha móvil más rápida y confiable para tareas como video HD y realidad <br>
+&nbsp; &nbsp; &nbsp; aumentada/realidad virtual. Maneja el tráfico de manera más eficiente y garantiza <br>
+&nbsp; &nbsp; &nbsp; una velocidad de transmisión de datos de al menos 100Mbps. <br>
+ </FONT> </p>
+
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Comunicaciones ultra confiables y de baja latencia (URLLC): </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; URLLC fue creada para servicios en tiempo real que requieren una latencia extremadamente baja. <br>
+&nbsp; &nbsp; &nbsp; Está destinada  a tareas de misión crítica, como cirugías remotas, interacción de vehículos autónomos <br>
+&nbsp; &nbsp; &nbsp; y automatización industrial. Proporciona una cobertura de datos ultra confiable con una latencia teórica <br>
+&nbsp; &nbsp; &nbsp; de menos de 1 milisegundo.<br>
+</FONT> </p>
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Comunicaciones masivas de tipo máquina (mMTC): </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Según la UIT, se caracteriza por una “gran cantidad de dispositivos conectados que normalmente <br>
+&nbsp; &nbsp; &nbsp; transmiten un volumen relativamente bajo de datos no sensibles al retraso”. Requiere dispositivos <br>
+&nbsp; &nbsp; &nbsp; de bajo costo y con una batería de larga duración. <br>
+</FONT> </p>
+
+
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Velocidad de datos máxima: </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; 5G ofrecerá velocidades significativamente más rápidas. Pueden alcanzar 20 Gbps descendentes <br>
+&nbsp; &nbsp; &nbsp; y 10 Gbps ascendentes por estación base móvil. No es la velocidad que experimentarías con 5G <br>
+&nbsp; &nbsp; &nbsp; (a menos que tengas una conexión dedicada), sino la que compartirán los usuarios de la celda. <br>
+</FONT> </p>
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Velocidades del mundo real: </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Las velocidades reales no serán iguales a las máximas. La especificación <br>
+&nbsp; &nbsp; &nbsp; requiere velocidades de descarga de 100Mbps y de 50Mbps para carga. <br>
+</FONT> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Latencia: </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; El tiempo que tardan los datos en viajar de un punto a otro debe ser de 4 milisegundos <br>
+&nbsp; &nbsp; &nbsp; en circunstancias ideales y de 1 milisegundo para las URLLC. <br>
+</FONT> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Eficiencia: </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Cuando están en uso, las interfaces de radio deben ser eficientes en materia energética <br>
+&nbsp; &nbsp; &nbsp; y, cuando no, caer a un modo de baja energía. Deberían cambiar entre de estado en 10 milisegundos cuando ya no esté en uso. <br>
+</FONT> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Eficiencia espectral: </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Es el ancho de banda para que la cantidad máxima de datos se transmita con la menor <br>
+&nbsp; &nbsp; &nbsp; cantidad de errores de transmisión. 5G debería tener una eficiencia ligeramente mejorada sobre LTE, llegando <br>
+&nbsp; &nbsp; &nbsp; a un enlace descendente de 30 bits/Hz, y de 15 bits/Hz ascendente. <br>
+</FONT> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Movilidad: </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; Con 5G, las estaciones base deben soportar movimientos de 0 a 310 mph. Si bien con redes LTE es <br>
+&nbsp; &nbsp; &nbsp; fácil, esto puede ser un desafío en las nuevas redes de ondas milimétricas. <br>
+</FONT> </p>
+
+
+<p > <FONT COLOR="#FFCA00" SIZE="5" FACE= "Arial"><li> &nbsp; &nbsp; &nbsp; &nbsp; Densidad de conexión: </li>
+
+<h2 Align= "justify" class="LEFTMARGIN">
+<p> <FONT COLOR="#FFFFFF" SIZE="4.5" FACE= "Arial"> 
+&nbsp; &nbsp; &nbsp; 5G debería soportar un mayor número de dispositivos conectados que LTE. El estándar <br>
+&nbsp; &nbsp; &nbsp; indica que debería ser 1 millón por kilómetro cuadrado. Es una cifra elevada, que considera el número <br>
+&nbsp; &nbsp; &nbsp; dispositivos que impulsarán el Internet de las cosas (IoT). <br>
+</FONT> </p>
+
+
+<hr align="center" size="5"><br>
+
+<embed src="C:\Users\ACER\Downloads\Beethoven-Für-Elise-Piano-Version.wav" width="350" height="60" autoplay="true"></embed>
+
+<br><br>
+
+<h2 Align= "center"> 
+<p > <FONT COLOR="#FF6732" SIZE="5" FACE= "Arial"> 5G: La tecnología del futuro que se pelean Huawei y E.E.U.U.
+</FONT></h2>
+
+<div style="text-align:center;">
+<embed src="C:\Users\ACER\Downloads\media.io_5G_ La tecnología del futuro que se pelean Huawei y EE.UU..mp4" width=600 height=500 autoplay="true"> </embed>
+</div>
+
+
+
+
+
+</BODY>
+</HTML>
